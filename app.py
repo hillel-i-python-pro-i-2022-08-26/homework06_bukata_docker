@@ -1,12 +1,11 @@
 from flask import Flask
+from faker import Faker
+
+faker = Faker()
+
 
 app = Flask(__name__)
 
 
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
-
-if __name__ == '__main__':
-    app.run()
+def fake_use():  # put application's code here
+    return f" {faker.name} e-adress: {faker.email()}"
