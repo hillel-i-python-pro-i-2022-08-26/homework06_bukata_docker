@@ -36,5 +36,6 @@ COPY --chown=${USER} ./app.py app.py
 # here we reconnect to created user and we act on behaf of the user
 USER ${USER}
 
+
 # here we show what to run
 ENTRYPOINT ["python", "app.py"]
