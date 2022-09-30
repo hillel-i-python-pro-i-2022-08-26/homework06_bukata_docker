@@ -37,5 +37,5 @@ COPY --chown=${USER} ./app.py app.py
 USER ${USER}
 
 
-# here we show what to run
+# here we show what to run in which system
 ENTRYPOINT ["python", "app.py"]
