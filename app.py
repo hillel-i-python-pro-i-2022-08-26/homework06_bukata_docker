@@ -8,4 +8,8 @@ app = Flask(__name__)
 
 
 def fake_use():  # put application's code here
-    return f" {faker.name} e-adress: {faker.email()}"
+    return f" e-adress: {faker.email()}"
+
+
+print("hi")
+print(fake_use())
