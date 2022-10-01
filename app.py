@@ -7,8 +7,11 @@ faker = Faker()
 
 @app.route("/")
 def fake_use():
-    for _ in range(5):
-        return f" e-adress: {faker.email()}"
+    users_emails = []
+    for user_email in range(5):
+        user_email = faker.email(users_emails)
+        users_emails.append(user_email)
+    return f" e-adress: {users_emails}"
 
 
 if __name__ == "__main__":
