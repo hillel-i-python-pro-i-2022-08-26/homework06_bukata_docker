@@ -1,12 +1,13 @@
 # Core
 flask==2.2.2
-# For name generator
+
+# For email generator
 faker==14.2.0
 # Formatter. Apply codestyle.
+
 black==22.8.0
 # Check codestyle [code_style]-[END]
 flake8==5.0.4
-
 # [code_style]-[BEGIN]
 # Pre-commit hook.
 pre-commit==2.20.0
