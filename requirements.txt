@@ -1,5 +1,6 @@
 # Core
 flask==2.2.2
+
 # For name generator
 faker==14.2.0
 # Formatter. Apply codestyle.
